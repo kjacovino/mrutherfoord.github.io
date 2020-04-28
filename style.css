@@ -85,9 +85,9 @@
 }
 
 .wrapper section.bg-text-area .bg-text {
-    background-image: url(img/bg-image.jpg);
-    background-size: 100% 100%;
-    padding: 205px 280px;
+    background: url(img/bg-image.jpg) center no-repeat;
+    background-size:cover;
+    padding: 17vw;
 }
 
 .wrapper section.bg-text-area .container {}
@@ -116,15 +116,26 @@ section.blog-post-area {
     margin-top: 50px;
 }
 
-section.blog-post-area .big-image {
-    float: left;
-    width: 50%;
-    padding-right: 35px;
+@media (min-width: 1000px) {
+  section.blog-post-area .single-post-big {
+    display: flex;
+  }
 }
 
+@media (min-width: 1000px) {
+  section.blog-post-area .big-image {
+    flex: 1;
+  }
+}
+section.blog-post-area .big-image {
+    padding-right: 35px;
+}
+@media (min-width: 1000px) {
+  section.blog-post-area .big-text {
+    flex: 1;
+  }
+}
 section.blog-post-area .big-text {
-    float: right;
-    width: 50%;
     padding-right: 20px;
 }
 
